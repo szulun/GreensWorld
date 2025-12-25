@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118532775984",
+    "project_id": "greensworld-c2918",
+    "storage_bucket": "greensworld-c2918.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118532775984:android:e36d51857a01fda5318df5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_frontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118532775984-q97o43diekva31i81fua4m5fedu4s8sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnkTzJyspIZSl6e5lk9bdpdJ_A_LP6_Ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118532775984-q97o43diekva31i81fua4m5fedu4s8sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

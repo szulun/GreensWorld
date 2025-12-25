@@ -1,0 +1,7 @@
+node_modules/
+venv/
+green/
+*.mp4
+*.gif
+serviceAccountKey.json
+.DS_Store

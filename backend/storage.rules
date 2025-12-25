@@ -1,0 +1,27 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow authenticated users to read and write avatars
+    match /avatars/{userId}/{fileName} {
+      allow read: if true; // Allow public read access for avatars
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Allow authenticated users to read and write plant post images
+    match /plant_posts/{userId}/{fileName} {
+      allow read: if true; // Allow public read access for plant post images
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Allow authenticated users to read and write plant images for Plant Hub
+    match /plant_images/{userId}/{fileName} {
+      allow read: if true; // Allow public read access for plant images
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Allow authenticated users to read all files
+    match /{allPaths=**} {
+      allow read: if request.auth != null;
+    }
+  }
+}
